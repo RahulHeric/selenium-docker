@@ -30,7 +30,8 @@ public class ChromeTestsecond {
 
 	 @Test
 	  public void f() {
-	      System.out.println("title of page : "+driver.getTitle());
+		  String title = driver.findElement(By.id("logInPanelHeading")).getText();
+	      System.out.println("title of page : "+title);
 	  }
 	 @Test
 	 public void f2() {
